@@ -22,7 +22,7 @@ function Signup({ setStep, onSignup }) {
       return;
     }
 
-    onSignup(form); // Pass data to App.js
+    onSignup(form); 
   };
 
   return (
