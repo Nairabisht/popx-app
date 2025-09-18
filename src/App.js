@@ -6,16 +6,16 @@ import Account from "./components/account";
 import "./App.css";
 
 function App() {
-  const [step, setStep] = useState("welcome"); // welcome | login | signup | account
-  const [user, setUser] = useState(null); // store current account
+  const [step, setStep] = useState("welcome"); 
+  const [user, setUser] = useState(null); 
 
-  // Handle signup (replace old account)
+
   const handleSignup = (userData) => {
     setUser(userData);
     setStep("account");
   };
 
-  // Handle login
+
   const handleLogin = (email, password) => {
     if (user && user.email === email && user.password === password) {
       setStep("account");
